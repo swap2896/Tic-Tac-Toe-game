@@ -1,2 +1,2 @@
 # Tic-Tac-Toe-game
-Simple Tic Tac Toe Game using Typescript and Angular Material
+Simple Tic Tac Toe Game using HTML,Typescript,CSS and Angular Material.
