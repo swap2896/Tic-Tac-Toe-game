@@ -1,0 +1,44 @@
+.header{
+    width: 100%;
+    background-color: black;
+    color:white;
+    height: 80px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color:orange
+}
+.family{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 140px 140px 140px;
+    grid-gap: 0px;
+}
+  
+app-square {
+    border: 1px solid white;
+    height: 140px;
+}
+/* app-square:hover{
+    background-color: lightcoral;
+    color: red;
+} */
+
+.alignleft {
+    float: left;
+}
+.alignright {
+    float: right;
+}
+footer {
+    bottom: 0px;
+    padding: -8px;
+    background-color: rgb(209, 207, 207);
+    margin-bottom:0px;
+    width: 100%; 
+}
+span{
+    font-size: small;
+}
+
