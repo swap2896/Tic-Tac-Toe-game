@@ -1,14 +1,14 @@
 <mat-toolbar class="header"><img src="assets/tic-tac-toe-logo.PNG" alt="TIC TAC TOE" width="250" height="80"><span style="text-align: center; font-size: xx-large; ">
-  Welcome To Tic Tac Toe Game</span></mat-toolbar>
+  Tic Tac Toe</span></mat-toolbar>
 
 <div style="padding:20px">
-  <div class="alignleft">
+  <div>
   <h1 *ngIf="!winner && squares_covered.length!=0 " class="family" style="color: orange;">Current Player: {{ player }} </h1>
   <h1 *ngIf="winner=='X'" class="family" style="color: rgb(87, 182, 234);"><mat-icon style="vertical-align: -3px;">person</mat-icon>Player {{ winner }}  won the game!</h1>
   <h1 *ngIf="winner=='O'" class="family" style="color:rgb(50, 204, 68);"><mat-icon style="vertical-align: -3px;">person</mat-icon>Player {{ winner }}  won the game!</h1>
   <h1 *ngIf="squares_covered.length==0 && !winner" class="family" style="color:purple" >Match Drawn!</h1>
   </div>
-<div class="alignright">
+<div>
 <!-- <button style="padding-left: 300px;" (click)="newGame()">Start new Game/Reset</button> -->
 <button (click)="newGame()" mat-raised-button style="background-color: black; color: orange;">Start New Game/Reset</button>
 </div>
@@ -17,7 +17,7 @@
 
 
 
-<main style="padding-left: 250px;">
+<main>
     <app-square 
         *ngFor="let val of squares; let i = index" 
         [value]="val"
